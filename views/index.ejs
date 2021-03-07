@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste</title>
+
+    <link rel="stylesheet" type="text/css" href="/semantic.min.css">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"
+        integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="/semantic.min.js"></script>
+</head>
+
+<body>
+    <form class="ui form" action="/" method="POST">
+        <div class="ui two column centered grid basic segment">
+            <div class="column">
+                <h4 class="ui dividing header">Formulário</h4>
+                <div class="field">
+                    <div class="two fields">
+                        <div class="field">
+                            <input type="text" name="nome" placeholder="Nome">
+                        </div>
+                        <div class="field">
+                            <input type="text" name="sobrenome" placeholder="Sobrenome">
+                        </div>
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="field">
+                        <input type="email" name="email" placeholder="E-mail">
+                    </div>
+                </div>
+                <button class="ui button green" type="submit">Enviar</button>
+            </div>
+        </div>
+    </form>
+    <% if (data) { %>
+        <div class="ui two column centered grid basic segment">
+            <div class="column">
+                <div class="ui card">
+                    <div class="content">
+                        <div class="header">Resultado</div>
+                    </div>
+                    <div class="content">
+                        <div class="ui small feed">
+                            <div class="event">
+                                <div class="content">
+                                    <div class="summary">
+                                        Animal: <%= data[0].animal %>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="event">
+                                <div class="content">
+                                    <div class="summary">
+                                        Cor: <%= data[0].cor %>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="event">
+                                <div class="content">
+                                    <div class="summary">
+                                        País: <%= data[0].pais %>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <% } %>
+</body>
+
+</html>

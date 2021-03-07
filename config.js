@@ -1,0 +1,9 @@
+export default {
+    "userName": "user_trial",
+    "password": "7412LIVE!@#$%¨&*()",
+    "server": "virtual2.febracorp.org.br",
+    "options": {
+        "database": "CONTOSO",
+        "encrypt": false
+    }
+}
